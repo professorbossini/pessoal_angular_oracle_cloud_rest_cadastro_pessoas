@@ -1,0 +1,20 @@
+<form #meuForm="ngForm" (submit)="cadastrar(meuForm)">
+
+  <div class="p-inputgroup">
+    <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+    <input ngModel name="nome" type="text" pInputText placeholder="Nome" class="w-full block">
+  </div>
+
+  <div class="p-inputgroup mt-2">
+    <span class="p-inputgroup-addon"><i class="pi pi-info"></i></span>
+    <input ngModel name="idade" type="number" pInputText placeholder="Idade" class="w-full block">
+  </div>
+
+  <div class="p-inputgroup mt-2">
+    <span class="p-inputgroup-addon"><i class="pi pi-heart"></i></span>
+    <input ngModel name="hobby" type="text" pInputText placeholder="Hobby" class="w-full block">
+  </div>
+
+  <button class="mt-2 w-full" pButton label="OK">
+  </button>
+</form>
